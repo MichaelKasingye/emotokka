@@ -2,6 +2,16 @@ import NavigationBar from './NavigationBar'
 import FooterComponentProps from './Footer'
 import CouroselComponent from './Courosel'
 import Cards from './Cards'
-import ModalComponent from './Modal'
+import FormModalComponent from './Modal/Form'
+import ImagesModal from './Modal/ImagesModal'
+import Images from './Images'
 
-export {NavigationBar, FooterComponentProps, CouroselComponent, Cards, ModalComponent}
+export {
+    Images,
+    ImagesModal,
+    NavigationBar,
+    FooterComponentProps,
+    CouroselComponent,
+    Cards,
+    FormModalComponent,
+}
