@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import Meta from '../src/Layouts/Meta'
-
 import { Cards, CouroselComponent } from '../src/Components-UI'
+import { cars } from '../src/utils/data/data'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,8 +24,10 @@ export default function Home() {
             </div>
 
             <div className=" d-flex justify-content-center align-items-center flex-wrap">
-                <Cards title="Raum older model" />
-                <Cards title="Raum newer model" />
+                {cars.map((car, index) => (
+                    <Cards key={index} data={car} />
+                    
+                    ))}
             </div>
         </>
     )

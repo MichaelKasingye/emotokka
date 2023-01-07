@@ -21,7 +21,7 @@ export default function FormModalComponent({}: FormModalComponentProps) {
                     <Modal.Title>Contact Agent</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <Form>
+                    {/* <Form>
                         <Form.Group
                             className="mb-3"
                             controlId="exampleForm.ControlInput1"
@@ -56,14 +56,19 @@ export default function FormModalComponent({}: FormModalComponentProps) {
                                 value="I would like to buy this Raum 2010"
                             />
                         </Form.Group>
-                    </Form>
+                    </Form> */}
+                    <div className="d-flex justify-content-between flex-wrap">
+                        {' '}
+                        <a href="mailto:emotokka@gmail.com">
+                            emotokka@gmail.com
+                        </a>
+                        <br />
+                        <a href="tel:+4733378901">Call: +4733378901</a>
+                    </div>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
                         Close
-                    </Button>
-                    <Button variant="primary" onClick={handleClose}>
-                        Save Changes
                     </Button>
                 </Modal.Footer>
             </Modal>
